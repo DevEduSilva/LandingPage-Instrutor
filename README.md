@@ -19,14 +19,16 @@ Este projeto é uma landing page para um instrutor de autoescola, desenvolvida c
 
 ## Estrutura do Projeto
 ```plaintext
-/
-├── index.html
 ├── css/
 │   └── styles.css
+│   └── header.css
+│   └── footer.css
+│   └── modal.css
 ├── js/
 │   └── script.js
-└── images/
-    └── logo.png
+├── images/
+│   └── logo.png
+└── index.html
 ```
 
 ## Contato
