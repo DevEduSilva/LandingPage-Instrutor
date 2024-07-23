@@ -3,5 +3,7 @@
   margin: 0;
   padding: 0;
   user-select: none;
-  text-decoration: none ;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
+
