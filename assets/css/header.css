@@ -7,7 +7,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,8 +50,8 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
+  color: rgb(119, 119, 119);
   transition: transform 0.3s; /* Adiciona uma transição suave */
-  color: rgb(111, 0, 255);
 }
 
 
