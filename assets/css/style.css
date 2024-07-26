@@ -20,6 +20,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 150px;
+  margin-top: 50px;
 }
 
 main img {
@@ -100,6 +101,7 @@ main button:hover .border {
   }
 
   main img {
+    margin-top: 50px;
     height: 200px;
   }
 }
