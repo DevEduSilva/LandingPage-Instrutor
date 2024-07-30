@@ -145,3 +145,28 @@ main button:hover .border {
     height: 360px;
   }
 }
+
+/* ---------------------------- About ---------------------------- */
+
+#about{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#about h2{
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.rounded-image {
+  width: 150px; /* Ajuste o tamanho conforme necessário */
+  height: 150px; /* Certifique-se de que a largura e a altura sejam iguais para manter a imagem redonda */
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover; /* Isso garante que a imagem se ajuste corretamente dentro do contêiner redondo */
+}
+
+
