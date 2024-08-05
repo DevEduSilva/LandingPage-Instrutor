@@ -147,26 +147,133 @@ main button:hover .border {
 }
 
 /* ---------------------------- About ---------------------------- */
-
-#about{
-  height: 80vh;
+#centralizar{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#about h2{
+#about {
+  height: auto;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
   text-align: center;
-  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about h2 {
+  font-size: 2.5rem;
   color: #fff;
+  margin-bottom: 30px;
 }
 
 .rounded-image {
-  width: 150px; /* Ajuste o tamanho conforme necessário */
-  height: 150px; /* Certifique-se de que a largura e a altura sejam iguais para manter a imagem redonda */
+  width: 200px; /* Ajuste o tamanho conforme necessário */
+  height: 200px; /* Certifique-se de que a largura e a altura sejam iguais para manter a imagem redonda */
   border-radius: 50%;
   border: 5px solid white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   object-fit: cover; /* Isso garante que a imagem se ajuste corretamente dentro do contêiner redondo */
+  margin-bottom: 20px;
+}
+
+#about h3 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  color: #fff;
+}
+
+#about p {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-top: 20px;
+  width: 90%;
+}
+
+/* Media Queries do About */
+/* PARA DISPOSITVOS MÓVEIS */
+@media screen and (max-width: 767px) {
+  #about {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #about h2 {
+    font-size: 2rem;
+  }
+
+  .rounded-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  #about h3 {
+    font-size: 1.5rem;
+  }
+
+  #about p {
+    width: 100%;
+  }
+}
+
+/* PARA TABLETS */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #about {
+    width: 70%;
+    padding: 30px;
+  }
+
+  #about h2 {
+    font-size: 2.2rem;
+  }
+
+  .rounded-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  #about h3 {
+    font-size: 1.6rem;
+  }
+
+  #about p {
+    width: 100%;
+  }
+}
+
+/* PARA TELAS GRANDES */
+@media (min-width: 1367px) {
+  #about {
+    width: 60%;
+    padding: 40px;
+  }
+
+  #about h2 {
+    font-size: 2.5rem;
+  }
+
+  .rounded-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  #about h3 {
+    font-size: 1.8rem;
+  }
+
+  #about p {
+    width: 100%;
+  }
 }
 
 
