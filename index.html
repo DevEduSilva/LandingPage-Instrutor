@@ -27,7 +27,7 @@
     <script src="assets/js/header.js" defer></script>
     <script>
         function goToAbout() {
-            const ctaabout = document.querySelector('#about');
+            const ctaabout = document.querySelector('.backgroundwhite');
             window.scrollTo({
                 top: ctaabout.offsetTop - 100,
                 behavior: 'smooth'
@@ -71,42 +71,56 @@
     </main>
 
     <!-- Página sobre -->
-    <section id="about">
-        <h2>Sobre Nós</h2>
-        <div id="centralizar">
-            <img src="assets/img/fototeste.png" alt="Imagem sobre nós" class="rounded-image">
-            <h3>Delcio do Santos Luiz Pereira</h3>
-            <p>Olá, sou Delcio Dos Santos, um instrutor de trânsito com mais de 10 anos de experiência, apaixonado por
-                ajudar as pessoas a dirigirem de forma segura e confiante. Formado como Instrutor de Trânsito combino
-                conhecimento técnico com uma abordagem pedagógica eficaz, garantindo que cada aluno entenda a
-                importância da segurança no trânsito. Meu objetivo é formar motoristas conscientes e responsáveis,
-                contribuindo para um trânsito mais seguro. Estou ansioso para ajudar você a se tornar um motorista
-                habilidoso e seguro!</p>
-        </div>
-    </section>
+    <div class="backgroundwhite">
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <div id="centralizar">
+                <img src="assets/img/fototeste.png" alt="Imagem sobre nós" class="rounded-image">
+                <h3>Delcio do Santos Luiz Pereira</h3>
+                <p>Olá, sou Delcio Dos Santos, um instrutor de trânsito com mais de 10 anos de experiência, apaixonado
+                    por
+                    ajudar as pessoas a dirigirem de forma segura e confiante. Formado como Instrutor de Trânsito
+                    combino
+                    conhecimento técnico com uma abordagem pedagógica eficaz, garantindo que cada aluno entenda a
+                    importância da segurança no trânsito. Meu objetivo é formar motoristas conscientes e responsáveis,
+                    contribuindo para um trânsito mais seguro. Estou ansioso para ajudar você a se tornar um motorista
+                    habilidoso e seguro!</p>
+            </div>
+        </section>
+    </div>
 
     <!-- Página dicas -->
     <section id="dicas">
-        <h2>Dicas</h2>
-        <div>
-            <!-- aqui vai ser um videos educativos -->
-            <iframe src="" frameborder="0" title="Vídeo Educativo"></iframe>
-            <button>Ver Mais Dicas</button>
+        <h2>Humanidade no trânsito!</h2>
+        <div id="centralizarvideoseinfo">
+            <!-- aqui vai ser um vídeo educativo -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_Tlk6e61E6w?si=db9L4ZG4292QDD8k"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <div class="">
+                <p>Não seja como o pateta, tenha consciência, seja prudente. Venha aprender e práticar a paz no trânsito!</p>
+                <button>Ver Mais Dicas</button>
+            </div>
         </div>
     </section>
 
+
     <!-- Página simulados e livrinho pdf-->
-    <section id="simulado">
-        <div>
-            <h2>Simulados</h2>
-            <p>Informações sobre os simulados.</p>
-            <p>Descrição adicional.</p>
-            <button>Faça o Simulado</button>
-        </div>
-        <aside>
-            <img src="" alt="Imagem do Simulado">
-        </aside>
-    </section>
+    <div class="backgroundwhite">
+        <section id="simulado">
+            <div>
+                <h2>Simulados</h2>
+                <p>Informações sobre os simulados.</p>
+                <p>Descrição adicional.</p>
+                <button>Faça o Simulado</button>
+            </div>
+            <aside>
+                <img src="" alt="Imagem do Simulado">
+            </aside>
+        </section>
+    </div>
 
     <!-- Página contato -->
     <section id="contato">
