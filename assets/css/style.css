@@ -438,3 +438,147 @@ main button:hover .border {
   }
 }
 
+/* ------------------------- SIMULADO ------------------------- */
+
+#simulado {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  text-align: center;
+}
+
+#simulado div {
+  flex: 1;
+  padding-right: 20px;
+}
+
+#simulado h2 {
+  font-size: 2.5rem;
+  color: #333; /* Cor do texto */
+  margin-bottom: 20px;
+}
+
+#simulado p {
+  color: #666; /* Cor do texto adicional */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#simulado button {
+  font-size: 18px;
+  padding: 1em 2.5em; /* Ajuste do padding */
+  border: none;
+  background: #ff5e5e; /* Cor de fundo vermelha */
+  color: #fff;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 25px; /* Botões mais arredondados */
+  margin-top: 20px;
+}
+
+#simulado button:active {
+  transform: scale(0.97);
+}
+
+#simulado button:hover {
+  background: #d9534f; /* Mudança de cor no hover */
+}
+
+#simulado aside {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#simulado aside img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries para seções Simulados */
+
+/* PARA DISPOSITIVOS MÓVEIS */
+@media screen and (max-width: 767px) {
+  #simulado {
+    flex-direction: column;
+  }
+
+  #simulado div {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #simulado h2 {
+    font-size: 2rem;
+  }
+
+  #simulado p {
+    font-size: 1rem;
+  }
+
+  #simulado button {
+    width: 100%;
+    padding: 1em;
+  }
+
+  #simulado aside img {
+    width: 100%;
+  }
+}
+
+/* PARA TABLETS */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #simulado {
+    flex-direction: column;
+  }
+
+  #simulado div {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #simulado h2 {
+    font-size: 2.2rem;
+  }
+
+  #simulado p {
+    font-size: 1.1rem;
+  }
+
+  #simulado button {
+    width: auto;
+  }
+
+  #simulado aside img {
+    width: 100%;
+  }
+}
+
+/* PARA TELAS GRANDES */
+@media (min-width: 1367px) {
+  #simulado {
+    flex-direction: row;
+  }
+
+  #simulado h2 {
+    font-size: 2.5rem;
+  }
+
+  #simulado p {
+    font-size: 1.2rem;
+  }
+
+  #simulado button {
+    width: auto;
+  }
+
+  #simulado aside img {
+    width: auto;
+  }
+}
