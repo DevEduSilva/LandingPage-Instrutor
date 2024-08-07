@@ -582,3 +582,152 @@ main button:hover .border {
     width: auto;
   }
 }
+
+/* ---------------------------- Contato ---------------------------- */
+
+#contato {
+  padding: 40px;
+  background-color: #32326d; /* Fundo mais escuro */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  width: 80%;
+  max-width: 1000px; /* Aumentando a largura máxima */
+}
+
+#contato h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 30px;
+  text-transform: uppercase; /* Texto em maiúsculas */
+  letter-spacing: 1.5px; /* Espaçamento entre letras */
+  border-bottom: 2px solid #fff; /* Linha inferior */
+  display: inline-block;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap; /* Permite que os elementos se ajustem em dispositivos menores */
+}
+
+form, .contact-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 300px; /* Garante que os elementos não fiquem muito estreitos */
+}
+
+form label {
+  color: #fff;
+  font-size: 1rem;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #34495e;
+  color: #fff;
+}
+
+form input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+form label[style="display: flex;"] p {
+  margin: 0;
+  color: #fff;
+}
+
+form button {
+  font-size: 18px;
+  padding: 1em 3em; /* Ajuste do padding */
+  border: none;
+  background: #e74c3c; /* Cor de fundo vermelha */
+  color: #fff;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 25px; /* Botões mais arredondados */
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+form button:active {
+  transform: scale(0.97);
+}
+
+form button:hover {
+  background: #c0392b; /* Mudança de cor no hover */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+}
+
+.contact-info iframe {
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Media Queries para seções Contato */
+
+/* PARA DISPOSITIVOS MÓVEIS */
+@media screen and (max-width: 767px) {
+  #contato {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  form button {
+    width: 100%;
+    padding: 1em;
+  }
+}
+
+/* PARA TABLETS */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #contato {
+    width: 80%;
+    padding: 30px;
+  }
+
+  form button {
+    width: auto;
+  }
+}
+
+/* PARA TELAS GRANDES */
+@media (min-width: 1367px) {
+  #contato {
+    width: 60%;
+    padding: 40px;
+  }
+
+  form button {
+    width: auto;
+  }
+}
+
