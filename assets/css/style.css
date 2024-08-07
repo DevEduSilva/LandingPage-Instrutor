@@ -148,12 +148,12 @@ main button:hover .border {
 
 /* ---------------------------- About ---------------------------- */
 .backgroundwhite {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)); /* Degradê suave */
-  width: 100vw; /* Ocupa toda a largura disponível */
-  position: relative; /* Para o efeito de borda */
-  overflow: hidden; /* Esconde overflow para efeito de borda */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+  width: 100vw; 
+  position: relative; 
+  overflow: hidden; 
+  margin: 0 auto; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
 }
 
 #centralizar {
@@ -184,12 +184,12 @@ main button:hover .border {
 }
 
 .rounded-image {
-  width: 200px; /* Ajuste o tamanho conforme necessário */
-  height: 200px; /* Certifique-se de que a largura e a altura sejam iguais para manter a imagem redonda */
+  width: 200px; 
+  height: 200px; 
   border-radius: 50%;
   border: 5px solid white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  object-fit: cover; /* Isso garante que a imagem se ajuste corretamente dentro do contêiner redondo */
+  object-fit: cover; 
   margin-bottom: 20px;
 }
 
@@ -287,20 +287,22 @@ main button:hover .border {
 
 #dicas {
   padding: 40px;
-  text-align: center;
+  background-color: #32326D;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 20px auto;
   width: 80%;
-  max-width: 900px; /* Aumentando a largura máxima */
+  max-width: 1000px; 
+  text-align: center;
 }
 
 #dicas h2 {
   font-size: 2.5rem;
-  color: #fff;
+  color: #fff; 
   margin-bottom: 30px;
-  text-transform: uppercase; /* Texto em maiúsculas */
-  letter-spacing: 1.5px; /* Espaçamento entre letras */
-  border-bottom: 2px solid #fff; /* Linha inferior */
+  text-transform: uppercase; 
+  letter-spacing: 1.5px; 
+  border-bottom: 2px solid #fff; 
   display: inline-block;
   padding-bottom: 10px;
 }
@@ -310,35 +312,46 @@ main button:hover .border {
   flex-direction: row;
   align-items: center;
   gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap; 
 }
 
 #centralizarvideoseinfo iframe {
-  width: 100%;
-  max-width: 700px; /* Aumentando a largura do vídeo */
-  height: 394px; /* Proporção 16:9 para o vídeo */
+  flex: 1;
+  max-width: 560px; 
+  height: 315px; 
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-#centralizarvideoseinfo p {
-  color: #fff;
-  font-size: 1.2rem;
+#centralizarvideoseinfo .info-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+}
+
+#centralizarvideoseinfo p {
+  color: #fff; 
+  font-size: 1.2rem;
   margin: 20px 0;
   max-width: 700px;
 }
 
 #centralizarvideoseinfo button {
   font-size: 18px;
-  padding: 1em 3em; /* Aumentando o padding */
+  padding: 1em 3em; 
   border: none;
-  background: #ff5e5e; /* Cor de fundo vermelha */
+  background: #e74c3c;
   color: #fff;
   font-weight: 700;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.2);
-  border-radius: 25px; /* Botões mais arredondados */
+  border-radius: 25px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 #centralizarvideoseinfo button:active {
@@ -346,7 +359,7 @@ main button:hover .border {
 }
 
 #centralizarvideoseinfo button:hover {
-  background: #d9534f; /* Mudança de cor no hover */
+  background: #c0392b; 
 }
 
 /* Media Queries para seções Dicas */
@@ -424,8 +437,8 @@ main button:hover .border {
   }
 
   #centralizarvideoseinfo iframe {
-    width: 700px;
-    height: 394px;
+    width: 560px;
+    height: 315px;
   }
 
   #centralizarvideoseinfo p {
@@ -438,21 +451,22 @@ main button:hover .border {
   }
 }
 
+
 /* ---------------------------- Simulado ---------------------------- */
 
 #simulado {
   padding: 40px;
-  background-color: #f8f9fa; /* Fundo claro */
+  background-color: #f8f9fa; 
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 20px auto;
   width: 80%;
-  max-width: 1000px; /* Aumentando a largura máxima */
+  max-width: 1000px; 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap; /* Permite que os elementos se ajustem em dispositivos menores */
+  flex-wrap: wrap; 
 }
 
 #simulado div {
@@ -462,36 +476,36 @@ main button:hover .border {
   align-items: center;
   text-align: center;
   gap: 15px;
-  min-width: 300px; /* Garante que os elementos não fiquem muito estreitos */
+  min-width: 300px; 
 }
 
 #simulado h2 {
   font-size: 2.5rem;
-  color: #2c3e50; /* Cor do texto */
+  color: #2c3e50; 
   margin-bottom: 20px;
-  text-transform: uppercase; /* Texto em maiúsculas */
-  letter-spacing: 1.5px; /* Espaçamento entre letras */
-  border-bottom: 2px solid #2c3e50; /* Linha inferior */
+  text-transform: uppercase; 
+  letter-spacing: 1.5px; 
+  border-bottom: 2px solid #2c3e50; 
   display: inline-block;
   padding-bottom: 10px;
 }
 
 #simulado p {
-  color: #555; /* Cor do texto adicional */
+  color: #555; 
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
 #simulado button {
   font-size: 18px;
-  padding: 1em 2.5em; /* Ajuste do padding */
+  padding: 1em 2.5em; 
   border: none;
-  background: #e74c3c; /* Cor de fundo vermelha */
+  background: #e74c3c;
   color: #fff;
   font-weight: 700;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.2);
-  border-radius: 25px; /* Botões mais arredondados */
+  border-radius: 25px;
   margin-top: 20px;
   cursor: pointer;
 }
@@ -501,7 +515,7 @@ main button:hover .border {
 }
 
 #simulado button:hover {
-  background: #c0392b; /* Mudança de cor no hover */
+  background: #c0392b; 
 }
 
 #simulado aside {
@@ -509,13 +523,13 @@ main button:hover .border {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 300px; /* Garante que os elementos não fiquem muito estreitos */
+  min-width: 300px; 
 }
 
 #simulado aside img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px; /* Bordas arredondadas */
+  border-radius: 10px; 
 }
 
 /* Media Queries para seções Simulados */
@@ -604,21 +618,21 @@ main button:hover .border {
 
 #contato {
   padding: 40px;
-  background-color: #32326d; /* Fundo mais escuro */
+  background-color: #32326d; 
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 20px auto;
   width: 80%;
-  max-width: 1000px; /* Aumentando a largura máxima */
+  max-width: 1000px; 
 }
 
 #contato h2 {
   font-size: 2.5rem;
   color: #fff;
   margin-bottom: 30px;
-  text-transform: uppercase; /* Texto em maiúsculas */
-  letter-spacing: 1.5px; /* Espaçamento entre letras */
-  border-bottom: 2px solid #fff; /* Linha inferior */
+  text-transform: uppercase; 
+  letter-spacing: 1.5px; 
+  border-bottom: 2px solid #fff; 
   display: inline-block;
   padding-bottom: 10px;
   text-align: center;
@@ -629,7 +643,7 @@ main button:hover .border {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  flex-wrap: wrap; /* Permite que os elementos se ajustem em dispositivos menores */
+  flex-wrap: wrap; 
 }
 
 form, .contact-info {
@@ -637,7 +651,7 @@ form, .contact-info {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  min-width: 300px; /* Garante que os elementos não fiquem muito estreitos */
+  min-width: 300px; 
 }
 
 form label {
@@ -667,14 +681,14 @@ form label[style="display: flex;"] p {
 
 form button {
   font-size: 18px;
-  padding: 1em 3em; /* Ajuste do padding */
+  padding: 1em 3em; 
   border: none;
-  background: #e74c3c; /* Cor de fundo vermelha */
+  background: #e74c3c;
   color: #fff;
   font-weight: 700;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.2);
-  border-radius: 25px; /* Botões mais arredondados */
+  border-radius: 25px;
   margin-top: 20px;
   cursor: pointer;
 }
@@ -684,7 +698,7 @@ form button:active {
 }
 
 form button:hover {
-  background: #c0392b; /* Mudança de cor no hover */
+  background: #c0392b; 
 }
 
 .contact-item {
