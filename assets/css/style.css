@@ -438,30 +438,46 @@ main button:hover .border {
   }
 }
 
-/* ------------------------- SIMULADO ------------------------- */
+/* ---------------------------- Simulado ---------------------------- */
 
 #simulado {
+  padding: 40px;
+  background-color: #f8f9fa; /* Fundo claro */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  width: 80%;
+  max-width: 1000px; /* Aumentando a largura máxima */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 40px;
-  text-align: center;
+  flex-wrap: wrap; /* Permite que os elementos se ajustem em dispositivos menores */
 }
 
 #simulado div {
   flex: 1;
-  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  min-width: 300px; /* Garante que os elementos não fiquem muito estreitos */
 }
 
 #simulado h2 {
   font-size: 2.5rem;
-  color: #333; /* Cor do texto */
+  color: #2c3e50; /* Cor do texto */
   margin-bottom: 20px;
+  text-transform: uppercase; /* Texto em maiúsculas */
+  letter-spacing: 1.5px; /* Espaçamento entre letras */
+  border-bottom: 2px solid #2c3e50; /* Linha inferior */
+  display: inline-block;
+  padding-bottom: 10px;
 }
 
 #simulado p {
-  color: #666; /* Cor do texto adicional */
+  color: #555; /* Cor do texto adicional */
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
@@ -470,13 +486,14 @@ main button:hover .border {
   font-size: 18px;
   padding: 1em 2.5em; /* Ajuste do padding */
   border: none;
-  background: #ff5e5e; /* Cor de fundo vermelha */
+  background: #e74c3c; /* Cor de fundo vermelha */
   color: #fff;
   font-weight: 700;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.2);
   border-radius: 25px; /* Botões mais arredondados */
   margin-top: 20px;
+  cursor: pointer;
 }
 
 #simulado button:active {
@@ -484,7 +501,7 @@ main button:hover .border {
 }
 
 #simulado button:hover {
-  background: #d9534f; /* Mudança de cor no hover */
+  background: #c0392b; /* Mudança de cor no hover */
 }
 
 #simulado aside {
@@ -492,13 +509,13 @@ main button:hover .border {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 300px; /* Garante que os elementos não fiquem muito estreitos */
 }
 
 #simulado aside img {
   max-width: 100%;
   height: auto;
   border-radius: 10px; /* Bordas arredondadas */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Media Queries para seções Simulados */
