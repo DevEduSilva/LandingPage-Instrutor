@@ -148,7 +148,7 @@ main button:hover .border {
 
 /* ---------------------------- About ---------------------------- */
 .backgroundwhite {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)); 
   width: 100vw; 
   position: relative; 
   overflow: hidden; 
@@ -172,15 +172,21 @@ main button:hover .border {
   padding: 40px;
   width: 80%;
   max-width: 800px;
-  margin: auto;
+  margin: 3vh auto;
   text-align: center;
   border-radius: 10px;
+  background-color: #ffffff; 
 }
 
 #about h2 {
   font-size: 2.5rem;
-  color: #000;
+  color: #2c3e50; 
   margin-bottom: 30px;
+  text-transform: uppercase; 
+  letter-spacing: 1.5px; /* Espaçamento entre letras */
+  border-bottom: 2px solid #2c3e50; 
+  display: inline-block;
+  padding-bottom: 10px;
 }
 
 .rounded-image {
@@ -196,19 +202,20 @@ main button:hover .border {
 #about h3 {
   font-size: 1.8rem;
   margin-top: 20px;
-  color: #000;
+  color: #2c3e50; 
 }
 
 #about p {
-  color: #000;
+  color: #2c3e50; 
   font-size: 1.2rem;
   text-align: justify;
   margin-top: 20px;
   width: 90%;
+  line-height: 1.6; 
 }
 
 /* Media Queries do About */
-/* PARA DISPOSITVOS MÓVEIS */
+/* PARA DISPOSITIVOS MÓVEIS */
 @media screen and (max-width: 767px) {
   #about {
     width: 90%;
@@ -282,6 +289,7 @@ main button:hover .border {
     width: 100%;
   }
 }
+
 
 /* ---------------------------- Dicas ---------------------------- */
 
