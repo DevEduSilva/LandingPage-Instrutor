@@ -142,3 +142,7 @@ nav ul li a.active {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 }
+
+nav ul li a{
+  cursor: pointer;
+}

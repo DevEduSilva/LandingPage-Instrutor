@@ -148,12 +148,16 @@ main button:hover .border {
 
 /* ---------------------------- About ---------------------------- */
 .backgroundwhite {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)); 
-  width: 100vw; 
-  position: relative; 
-  overflow: hidden; 
-  margin: 0 auto; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.7)
+  );
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 #centralizar {
@@ -175,43 +179,43 @@ main button:hover .border {
   margin: 3vh auto;
   text-align: center;
   border-radius: 10px;
-  background-color: #ffffff; 
+  background-color: #ffffff;
 }
 
 #about h2 {
   font-size: 2.5rem;
-  color: #2c3e50; 
+  color: #2c3e50;
   margin-bottom: 30px;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   letter-spacing: 1.5px; /* Espaçamento entre letras */
-  border-bottom: 2px solid #2c3e50; 
+  border-bottom: 2px solid #2c3e50;
   display: inline-block;
   padding-bottom: 10px;
 }
 
 .rounded-image {
-  width: 200px; 
-  height: 200px; 
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 5px solid white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  object-fit: cover; 
+  object-fit: cover;
   margin-bottom: 20px;
 }
 
 #about h3 {
   font-size: 1.8rem;
   margin-top: 20px;
-  color: #2c3e50; 
+  color: #2c3e50;
 }
 
 #about p {
-  color: #2c3e50; 
+  color: #2c3e50;
   font-size: 1.2rem;
   text-align: justify;
   margin-top: 20px;
   width: 90%;
-  line-height: 1.6; 
+  line-height: 1.6;
 }
 
 /* Media Queries do About */
@@ -290,27 +294,26 @@ main button:hover .border {
   }
 }
 
-
 /* ---------------------------- Dicas ---------------------------- */
 
 #dicas {
   padding: 40px;
-  background-color: #32326D;
+  background-color: #32326d;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 20px auto;
   width: 80%;
-  max-width: 1000px; 
+  max-width: 1000px;
   text-align: center;
 }
 
 #dicas h2 {
   font-size: 2.5rem;
-  color: #fff; 
+  color: #fff;
   margin-bottom: 30px;
-  text-transform: uppercase; 
-  letter-spacing: 1.5px; 
-  border-bottom: 2px solid #fff; 
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 2px solid #fff;
   display: inline-block;
   padding-bottom: 10px;
 }
@@ -321,13 +324,13 @@ main button:hover .border {
   align-items: center;
   gap: 30px;
   justify-content: space-between;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 #centralizarvideoseinfo iframe {
   flex: 1;
-  max-width: 560px; 
-  height: 315px; 
+  max-width: 560px;
+  height: 315px;
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -342,7 +345,7 @@ main button:hover .border {
 }
 
 #centralizarvideoseinfo p {
-  color: #fff; 
+  color: #fff;
   font-size: 1.2rem;
   margin: 20px 0;
   max-width: 700px;
@@ -350,7 +353,7 @@ main button:hover .border {
 
 #centralizarvideoseinfo button {
   font-size: 18px;
-  padding: 1em 3em; 
+  padding: 1em 3em;
   border: none;
   background: #e74c3c;
   color: #fff;
@@ -367,7 +370,7 @@ main button:hover .border {
 }
 
 #centralizarvideoseinfo button:hover {
-  background: #c0392b; 
+  background: #c0392b;
 }
 
 /* Media Queries para seções Dicas */
@@ -459,22 +462,21 @@ main button:hover .border {
   }
 }
 
-
 /* ---------------------------- Simulado ---------------------------- */
 
 #simulado {
   padding: 40px;
-  background-color: #f8f9fa; 
+  background-color: #f8f9fa;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 20px auto;
   width: 80%;
-  max-width: 1000px; 
+  max-width: 1000px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 #simulado div {
@@ -484,29 +486,29 @@ main button:hover .border {
   align-items: center;
   text-align: center;
   gap: 15px;
-  min-width: 300px; 
+  min-width: 300px;
 }
 
 #simulado h2 {
   font-size: 2.5rem;
-  color: #2c3e50; 
+  color: #2c3e50;
   margin-bottom: 20px;
-  text-transform: uppercase; 
-  letter-spacing: 1.5px; 
-  border-bottom: 2px solid #2c3e50; 
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 2px solid #2c3e50;
   display: inline-block;
   padding-bottom: 10px;
 }
 
 #simulado p {
-  color: #555; 
+  color: #555;
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
 #simulado button {
   font-size: 18px;
-  padding: 1em 2.5em; 
+  padding: 1em 2.5em;
   border: none;
   background: #e74c3c;
   color: #fff;
@@ -523,7 +525,7 @@ main button:hover .border {
 }
 
 #simulado button:hover {
-  background: #c0392b; 
+  background: #c0392b;
 }
 
 #simulado aside {
@@ -531,13 +533,13 @@ main button:hover .border {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 300px; 
+  min-width: 300px;
 }
 
 #simulado aside img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 /* Media Queries para seções Simulados */
@@ -626,21 +628,21 @@ main button:hover .border {
 
 #contato {
   padding: 40px;
-  background-color: #32326d; 
+  background-color: #32326d;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 20px auto;
   width: 80%;
-  max-width: 1000px; 
+  max-width: 1000px;
 }
 
 #contato h2 {
   font-size: 2.5rem;
   color: #fff;
   margin-bottom: 30px;
-  text-transform: uppercase; 
-  letter-spacing: 1.5px; 
-  border-bottom: 2px solid #fff; 
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 2px solid #fff;
   display: inline-block;
   padding-bottom: 10px;
   text-align: center;
@@ -651,15 +653,16 @@ main button:hover .border {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
-form, .contact-info {
+form,
+.contact-info {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  min-width: 300px; 
+  min-width: 300px;
 }
 
 form label {
@@ -667,16 +670,33 @@ form label {
   font-size: 1rem;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 90%;
   padding: 10px;
   margin: 5px 0;
   border: 1px solid #fff;
   border-radius: 5px;
-  background-color: #34495e;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
+  transition: border-color 0.3s ease;
 }
 
+/* Estilo de campo válido (preenchido corretamente) */
+form input.valid,
+form textarea.valid {
+  border: 2.5px solid rgba(0, 255, 0, 0.76);
+  box-shadow: 0 0 25px rgba(0, 255, 0, 0.5);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease}
+
+/* Estilo de campo inválido (não preenchido) */
+form input.invalid,
+form textarea.invalid {
+  border: 2.5px solid rgba(255, 0, 0, 0.76);
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;}
+
+/* Estilo para o checkbox */
 form input[type="checkbox"] {
   width: auto;
   margin-right: 10px;
@@ -689,7 +709,7 @@ form label[style="display: flex;"] p {
 
 form button {
   font-size: 18px;
-  padding: 1em 3em; 
+  padding: 1em 3em;
   border: none;
   background: #e74c3c;
   color: #fff;
@@ -706,7 +726,7 @@ form button:active {
 }
 
 form button:hover {
-  background: #c0392b; 
+  background: #c0392b;
 }
 
 .contact-item {
@@ -769,4 +789,3 @@ form button:hover {
     width: auto;
   }
 }
-
