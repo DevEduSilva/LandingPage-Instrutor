@@ -25,15 +25,7 @@
     <!-- GERAL -->
     <script src="assets/js/script.js" defer></script>,
     <script src="assets/js/header.js" defer></script>
-    <script>
-        function goToAbout() {
-            const ctaabout = document.querySelector('.backgroundwhite');
-            window.scrollTo({
-                top: ctaabout.offsetTop - 100,
-                behavior: 'smooth'
-            });
-        }
-    </script>
+    <script src="assets/js/goToFromHeader.js" defer></script>
 </head>
 
 <body id='inicio'>
@@ -47,11 +39,11 @@
         <img src="assets/img/logo.png" alt="Logo do site">
         <nav>
             <ul>
-                <li><a href="#inicio">PÁGINA INICIAL</a></li>
-                <li><a href="#about">SOBRE</a></li>
-                <li><a href="#dicas">DICAS</a></li>
-                <li><a href="#simulados">SIMULADOS</a></li>
-                <li><a href="#contato">CONTATO</a></li>
+                <li><a onclick="goTohome()">PÁGINA INICIAL</a></li>
+                <li><a onclick="goToAbout()">SOBRE</a></li>
+                <li><a onclick="goToDicas()">DICAS</a></li>
+                <li><a onclick="goToSimulado()">SIMULADOS</a></li>
+                <li><a onclick="goToContato()">CONTATO</a></li>
             </ul>
         </nav>
     </header>
@@ -70,98 +62,109 @@
     </main>
 
     <!-- Página about -->
-    <div class="backgroundwhite">
-        <section id="about">
-            <h2>Sobre Nós</h2>
-            <div id="centralizar">
-                <img src="assets/img/fototeste.png" alt="Imagem sobre nós" class="rounded-image">
-                <h3>Delcio dos Santos Luiz Pereira</h3>
-                <p>
-                    Olá! Sou Delcio dos Santos, um dedicado instrutor de trânsito com mais de 10 anos de experiência.
-                    Minha paixão é ajudar as pessoas a se tornarem motoristas seguros e confiantes.
-                    Com formação em Instrutor de Trânsito, combino profundo conhecimento técnico com uma abordagem
-                    pedagógica
-                    eficaz, garantindo que cada aluno compreenda a importância vital da segurança no trânsito.
-                </p>
-                <p>
-                    Meu objetivo é transformar cada aluno em um motorista consciente e responsável, contribuindo para um
-                    trânsito
-                    mais seguro para todos. Estou empolgado para acompanhar sua jornada e ajudá-lo a se tornar um
-                    motorista habilidoso e seguro!
-                </p>
-            </div>
-        </section>
+    <div id="gotoabout">
+        <div class="backgroundwhite">
+            <section id="about">
+                <h2>Sobre Mim</h2>
+                <div id="centralizar">
+                    <img src="assets/img/fototeste.png" alt="Imagem sobre nós" class="rounded-image">
+                    <h3>Delcio dos Santos Luiz Pereira</h3>
+                    <p>
+                        Olá! Sou Delcio dos Santos, um dedicado instrutor de trânsito com mais de 10 anos de
+                        experiência.
+                        Minha paixão é ajudar as pessoas a se tornarem motoristas seguros e confiantes.
+                        Com formação em Instrutor de Trânsito, combino profundo conhecimento técnico com uma abordagem
+                        pedagógica
+                        eficaz, garantindo que cada aluno compreenda a importância vital da segurança no trânsito.
+                    </p>
+                    <p>
+                        Meu objetivo é transformar cada aluno em um motorista consciente e responsável, contribuindo
+                        para um
+                        trânsito
+                        mais seguro para todos. Estou empolgado para acompanhar sua jornada e ajudá-lo a se tornar um
+                        motorista habilidoso e seguro!
+                    </p>
+                </div>
+            </section>
+        </div>
     </div>
 
     <!-- Página dicas -->
-    <section id="dicas">
-        <h2>Humanidade no trânsito!</h2>
-        <div id="centralizarvideoseinfo">
-            <!-- aqui vai ser um vídeo educativo -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/_Tlk6e61E6w?si=db9L4ZG4292QDD8k"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div id="gotodicas">
+        <section id="dicas">
+            <h2>Humanidade no trânsito!</h2>
+            <div id="centralizarvideoseinfo">
+                <!-- aqui vai ser um vídeo educativo -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_Tlk6e61E6w?si=db9L4ZG4292QDD8k"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-            <div class="info-text">
-                <p>Não seja como o Pateta! Tenha consciência e seja prudente. Venha aprender e praticar a paz no
-                    trânsito. Juntos podemos fazer a diferença!</p>
-                <button>Ver Mais Dicas</button>
+                <div class="info-text">
+                    <p>Não seja como o Pateta! Tenha consciência e seja prudente. Venha aprender e praticar a paz no
+                        trânsito. Juntos podemos fazer a diferença!</p>
+                    <button>Ver Mais Dicas</button>
+                </div>
             </div>
-        </div>
-    </section>
-
-
-    <!-- Página simulados e livrinho pdf-->
-    <div class="backgroundwhite">
-        <section id="simulado">
-            <div>
-                <h2>MANUAL E SIMULADOS PARA HABILITAÇÃO</h2>
-                <p>Teste seu nivel de conhecimento com questões.</p>
-                <button>Faça o Simulado</button>
-            </div>
-            <aside>
-                <img src="assets/img/TESTE.png" alt="Imagem do Simulado">
-            </aside>
         </section>
     </div>
 
-    <!-- Página contato -->
-    <section id="contato">
-        <h2>Contato</h2>
-        <div class="contact-container">
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required>
-                <label for="mensagem">Diga o que você deseja:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
-                <label style="display: flex;">
-                    <input type="checkbox" name="newsletter" style="height: 20px;" required>
-                    <p>Concordo em enviar meus dados e permito que um profissional entre em contato para demais
-                        informações!</p>
-                </label>
-                <button type="submit">Enviar</button>
-            </form>
 
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-phone-alt"></i> <!-- Ícone de telefone -->
-                    <p>Segunda à Sexta de 07:00 às 18:00.</p>
+    <!-- Página simulados e livrinho pdf-->
+    <div id="gotosimulado">
+        <div class="backgroundwhite">
+            <section id="simulado">
+                <div>
+                    <h2>MANUAL E SIMULADOS PARA HABILITAÇÃO</h2>
+                    <p>Teste seu nivel de conhecimento com questões.</p>
+                    <button>Faça o Simulado</button>
                 </div>
-                <div class="contact-item">
-                    <i class="fab fa-whatsapp"></i> <!-- Ícone de WhatsApp -->
-                    <p>(61) 99196-1608</p>
-                </div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.721216064301!2d-48.11320192855848!3d-15.818647289990727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bccdaf9407e59%3A0xbe499259be65e093!2sAuto%20escola%20Paz%20no%20Tr%C3%A2nsito%20-%20Centro%20de%20Forma%C3%A7%C3%A3o%20de%20Condutores!5e0!3m2!1spt-BR!2sbr!4v1721697809273!5m2!1spt-BR!2sbr"
-                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-cross-origin">
-                </iframe>
-            </div>
+                <aside>
+                    <img src="assets/img/TESTE.png" alt="Imagem do Simulado">
+                </aside>
+            </section>
         </div>
-    </section>
+    </div>
+
+    <!-- Página contato -->
+    <div id="gotocontato">
+        <section id="contato">
+            <h2>Contato</h2>
+            <div class="contact-container">
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                    <label for="mensagem">Diga o que você deseja:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                    <label style="display: flex;">
+                        <input type="checkbox" name="newsletter" style="height: 20px;" required>
+                        <p>Concordo em enviar meus dados e permito que um profissional entre em contato para demais
+                            informações!</p>
+                    </label>
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i> <!-- Ícone de telefone -->
+                        <p>Segunda à Sexta de 07:00 às 18:00.</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i> <!-- Ícone de WhatsApp -->
+                        <p>(61) 99196-1608</p>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.721216064301!2d-48.11320192855848!3d-15.818647289990727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bccdaf9407e59%3A0xbe499259be65e093!2sAuto%20escola%20Paz%20no%20Tr%C3%A2nsito%20-%20Centro%20de%20Forma%C3%A7%C3%A3o%20de%20Condutores!5e0!3m2!1spt-BR!2sbr!4v1721697809273!5m2!1spt-BR!2sbr"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-cross-origin">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <!-- Footer -->
     <footer>
         <div id="icons">
