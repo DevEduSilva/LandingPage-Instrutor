@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRUTOR DE TRÂNSITO DELCIO </title>
+    <meta name="description"
+        content="Instrutor de trânsito Delcio - Mais de 10 anos ajudando a formar motoristas responsáveis e conscientes. Saiba mais sobre direção, para novos condutores e aulas de reforço.">
+    <link rel="icon" type="image/x-icon" href="assets/img/logoInvertido.png">
+
+    <!-- LINKAGEM DE ICONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- ARQUIVOS CSS -->
+    <!-- GERAL -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- HEADER -->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <!-- FOOTER -->
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <!-- dicas -->
+    <link rel="stylesheet" href="assets/css/dicas.css">
+
+    <!-- Arquivos JS -->
+    <!-- GERAL -->
+    <script src="assets/js/header.js" defer></script>
+    <script src="assets/js/goToFromHeader.js" defer></script>
+</head>
+
+<body id='inicio'>
+
+    <!-- Header -->
+    <header>
+        <button class="menu-icon" aria-label="Toggle navigation" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <img src="assets/img/logo.png" alt="Logo do site" onclick="window.location.href='index.html'">
+        <nav>
+            <ul>
+                <li><a onclick="goTohome()">ETAPAS</a></li>
+                <li><a onclick="goToAbout()">SOBRE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Página principal -->
+    <main id="mainDicas">
+        <article>
+            <h1 style="color: white">COMO<span style="color:red"> CONQUISTAR</span> SUA PRIMEIRA HABILITAÇÃO</h1>
+            <h3 style="font-weight: 300;">Veja etapa por etapa de como você iniciar o seu processo de conquistar sua
+                CNH.</h3>
+
+        </article>
+    </main>
+
+    <!-- Página SOBRE -->
+    <div id="gotoabout">
+        <div class="backgroundwhite">
+            <section id="aboutDicas">
+
+                <section class="step">
+                    <h2 id="titleStep">ETAPA Nº1: <br> REQUISITOS OBRIGATÓRIOS</h2>
+                    <div class="containerStepsAndContents">
+                        <i class="fas fa-id-card fa-6x" style="color: #2C3E50;"></i>
+                        <p id="contentStep">Para iniciar essa etapa, é necessário ter no mínimo 18 anos, ser responsável
+                            pelos próprios atos, saber ler e escrever, além de possuir RG e CPF.</p>
+                    </div>
+                </section>
+
+                <section class="step">
+                    <h2 id="titleStep">ETAPA Nº2: <br> ESCOLHA DE UM CFC</h2>
+                    <div class="containerStepsAndContents">
+                        <i class="fa-sharp fa-solid fa-school fa-6x" style="color: #2C3E50;"></i>
+                        <p id="contentStep">Opte por uma autoescola de confiança, também chamada de Centro de Formação
+                            de Condutores (CFC). É nela que o aluno passará pelas próximas etapas e contará com todo o
+                            suporte necessário.</p>
+
+                    </div>
+                </section>
+
+                <section class="step">
+                    <h2 id="titleStep">ETAPA Nº3: <br>EXAMES</h2>
+                    <div class="containerStepsAndContents">
+                        <i class="fa-solid fa-house-medical fa-6x" style="color: #2C3E50;"></i>
+                        <p id="contentStep">O candidato deve passar por avaliação psicológica e exame de aptidão física
+                            e mental para obter a CNH, conforme Art. 3º do Código de Trânsito Brasileiro (CTB).</p>
+                    </div>
+                </section>
+
+                <section class="step">
+                    <h2 id="titleStep">ETAPA Nº4: <br> AULA TEÓRICA E PROVA</h2>
+                    <div class="containerStepsAndContents">
+                        <i class="fa-solid fa-book fa-6x" style="color: #2C3E50;"></i>
+                        <p id="contentStep">Para obter a CNH, o candidato deve realizar 45 horas/aula de curso teórico,
+                            abordando temas como legislação de trânsito, direção defensiva, meio ambiente e primeiros
+                            socorros. <br>Após o curso, é necessário realizar uma prova teórica, na qual o candidato
+                            deve
+                            acertar no mínimo 70% das questões para ser aprovado, conforme previsto no Código de
+                            Trânsito Brasileiro (CTB).</p>
+                    </div>
+                </section>
+
+                <section class="step">
+                    <h2 id="titleStep">ETAPA Nº5: <br> AULA PRÁTICA E PROVA</h2>
+                    <div class="containerStepsAndContents">
+                        <i class="fa-solid fa-car fa-6x" style="color: #2C3E50;"></i>
+                        <p id="contentStep">Para obter a CNH, o candidato deve completar 20h/aula de prática de
+                            direção de carro e/ou 20h/aula de moto. <br> Após as aulas práticas, o candidato deve
+                            realizar uma prova prática de direção, e para ser aprovado, precisa demonstrar domínio do
+                            veículo e cumprir os critérios exigidos, conforme estabelecido pelo Código de Trânsito
+                            Brasileiro (CTB).</p>
+                    </div><br>
+                    <button id="aulasPraticas">
+                        <span>Veja aqui como será suas aulas</span>
+                    </button>
+                </section>
+
+
+                <section class="step">
+                    <h2 id="titleStep">ETAPA EXTRA/OPCIONAL</h2>
+                    <div class="containerStepsAndContents">
+                        <i class="fa-solid fa-book-open-reader fa-6x" style="color: #2C3E50;"></i>
+                        <p id="contentStep">Teste seu nível de conhecimento para passar na prova teórica aqui mesmo na
+                            plataforma com nosso questionário básico de conhecimentos! Clique no link abaixo e se
+                            divirta!</p>
+                    </div><br>
+                    <button id="aulasPraticas">
+                        <span>Questionário Online</span>
+                    </button>
+                </section>
+            </section>
+
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div id="icons">
+            <a href="https://wa.me/+556195705982" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>&copy;2024 <strong>Web</strong>DevSilva</p>
+    </footer>
+
+</body>
+
+</html>

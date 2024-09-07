@@ -1,0 +1,286 @@
+/* ------------------------------- #mainDicas ------------------------------- */
+
+#mainDicas {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: columns;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 50px;
+}
+
+#mainDicas img {
+  height: 360px;
+}
+
+article {
+  display: grid;
+  row-gap: 20px;
+}
+
+#mainDicas h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: red;
+}
+#mainDicas h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+}
+
+#mainDicas button {
+  font-size: 16px;
+  position: relative;
+  margin: auto;
+  padding: 1em 2.5em 1em 2.5em;
+  border: none;
+  background: #fff;
+  transition: all 0.1s linear;
+  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+}
+
+#mainDicas button:active {
+  transform: scale(0.95);
+}
+
+#mainDicas button span {
+  color: #2c2c5d;
+  font-weight: 700;
+}
+
+#mainDicas button .border {
+  position: absolute;
+  border: 0.15em solid #fff;
+  transition: all 0.3s 0.08s linear;
+  top: 50%;
+  left: 50%;
+  width: 9em;
+  height: 2.9em;
+  transform: translate(-50%, -50%);
+}
+
+#mainDicas button:hover .border {
+  display: block;
+  width: 11em;
+  height: 3.4em;
+}
+
+.full-rounded {
+  border-radius: 2em;
+}
+
+/* Media Query do #mainDicas */
+/* PARA DISPOSITVOS MÓVEIS */
+@media screen and (max-width: 767px) {
+  #mainDicas {
+    flex-direction: column;
+    gap: 50px;
+    height: 25vh;
+    width: 95vw;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 0px auto;
+  }
+
+  #mainDicas h1 {
+    font-size: 1.5rem;
+  }
+
+  #mainDicas h3 {
+    font-size: 1rem;
+  }
+
+  #mainDicas img {
+    margin-top: 50px;
+    height: 200px;
+  }
+}
+
+/* PARA TABLETS */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #mainDicas {
+    flex-direction: row;
+    gap: 100px;
+  }
+
+  #mainDicas h1 {
+    font-size: 3rem;
+  }
+
+  #mainDicas h3 {
+    font-size: 1.1rem;
+  }
+
+  #mainDicas img {
+    height: 300px;
+  }
+}
+
+/* PARA TELAS GRANDES */
+@media (min-width: 1367px) {
+  #mainDicas {
+    flex-direction: row;
+    gap: 150px;
+    height: 20vh;
+  }
+
+  #mainDicas h1 {
+    font-size: 3.5rem;
+  }
+
+  #mainDicas h3 {
+    font-size: 1.2rem;
+  }
+
+  #mainDicas img {
+    height: 360px;
+  }
+}
+
+/* ------------------------aboutDicas-------------------- */
+#aboutDicas {
+  height: auto;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  width: 80%;
+  max-width: 800px;
+  margin: 3vh auto;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ffffff;
+  gap: 20px;
+}
+
+.containerStepsAndContents {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  text-align: justify;
+}
+
+#aboutDicas #titleStep {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px; /* Espaçamento entre letras */
+  border-bottom: 2px solid #2c3e50;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+#aboutDicas #contentStep {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-top: 20px;
+  width: 90%;
+  line-height: 1.6;
+}
+
+#aulasPraticas {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 250px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: red;
+  transform: skew(-21deg);
+}
+
+#aulasPraticas span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+#aulasPraticas::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+#aulasPraticas:hover {
+  color: #fff;
+}
+
+#aulasPraticas:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+/* Media Queries do AboutDicas */
+/* PARA DISPOSITIVOS MÓVEIS */
+@media screen and (max-width: 767px) {
+  #aboutDicas {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .containerStepsAndContents {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: justify;
+  }
+
+  #aboutDicas #titleStep {
+    font-size: 2rem;
+    width: 95vw;
+  }
+
+  #aboutDicas #contentStep {
+    width: 100%;
+  }
+}
+
+/* PARA TABLETS */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #aboutDicas {
+    width: 70%;
+    padding: 30px;
+  }
+
+  #aboutDicas #titleStep {
+    font-size: 2.2rem;
+  }
+
+  #aboutDicas #contentStep {
+    width: 100%;
+  }
+}
+
+/* PARA TELAS GRANDES */
+@media (min-width: 1367px) {
+  #aboutDicas {
+    width: 60%;
+    padding: 40px;
+  }
+
+  #aboutDicas #titleStep {
+    font-size: 2.5rem;
+  }
+
+  #aboutDicas #contentStep {
+    width: 100%;
+  }
+}
