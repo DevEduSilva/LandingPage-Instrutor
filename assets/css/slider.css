@@ -1,0 +1,138 @@
+.categoriasTitle {
+  padding-top: 10vh;
+  color: #fff;
+}
+
+.containerslide {
+  display: flex;
+  overflow: hidden;
+  max-width: 90%;
+  height: 300px;
+  margin: 0 auto;
+  cursor: grab;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.boxslide {
+  min-width: 25vw;
+  height: 100%;
+  max-width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+  user-select: none;
+  pointer-events: none;
+}
+
+.fotobox {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nomebox {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  font-size: 1.2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Desabilita a transição durante o controle manual */
+.containerslide.dragging {
+  transition: none;
+}
+
+/* PARA DISPOSITIVOS MÓVEIS - ATÉ 767px */
+@media screen and (max-width: 767px) {
+  .containerslide {
+    height: 50vh;
+    max-width: 90%;
+    gap: 5px;
+  }
+
+  .boxslide {
+    min-width: 50vw;
+    max-width: none;
+    height: 95%;
+  }
+
+  .fotobox {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .nomebox {
+    width: 50vw;
+    max-width: none;
+    padding: 5px;
+  }
+
+  .nomebox {
+    font-size: 0.9rem;
+  }
+}
+
+/* PARA TABLETS - ENTRE 768px E 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #mainCategory {
+    margin: 0;
+}
+  .containerslide {
+    height: 240px;
+    max-width: 95%;
+  }
+
+  .boxslide {
+    min-width: 45vw;
+    max-width: 250px;
+  }
+
+  .fotobox {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .nomebox {
+    font-size: 1rem;
+  }
+}
+
+/* PARA TELAS GRANDES - ACIMA DE 1367px */
+@media (min-width: 1367px) {
+  .categoriasTitle {
+    padding: 0vh;
+  }
+
+  .containerslide {
+    height: 400px;
+    max-width: 80%;
+    gap: 10px !important;
+  }
+
+  .boxslide {
+    min-width: 20vw;
+    max-width: 400px;
+  }
+
+  .fotobox {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .nomebox {
+    font-size: 1.4rem;
+    max-width: 25%;
+  }
+}

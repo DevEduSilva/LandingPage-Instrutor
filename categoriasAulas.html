@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="assets/css/footer2.css">
     <!-- categoria -->
     <link rel="stylesheet" href="assets/css/categorias.css">
+    <!-- Slider -->
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <script src="assets/js/slider.js" defer></script>
+
 
 
     <!-- Arquivos JS -->
@@ -48,22 +52,59 @@
 
     <!-- Página caterogia -->
     <main id="mainCategory">
+        <article id="OnAndOff">
+            <h1 id="TitleCategory">CATEGORIAS</h1>
 
-        <h1 id="TitleCategory">CATEGORIAS</h1>
+            <article id="containerCategories">
+                <section class="containerPhotoAndSubtitle">
+                    <img src="assets/img/carro.jpg" alt="Categoria Carro" class="photoCategory">
+                    <h2 class="SubtitleCategory">CARRO</h2>
+                </section>
 
-        <article id="containerCategories">
-            <section class="containerPhotoAndSubtitle">
-                <img src="assets/img/carro.jpg" alt="Categoria Carro" class="photoCategory">
-                <h2 class="SubtitleCategory">CARRO</h2>
-            </section>
-
-            <section class="containerPhotoAndSubtitle">
-                <img src="assets/img/moto.png" alt="Categoria Moto" class="photoCategory">
-                <h2 class="SubtitleCategory">MOTO</h2>
-            </section>
+                <section class="containerPhotoAndSubtitle">
+                    <img src="assets/img/moto.png" alt="Categoria Moto" class="photoCategory">
+                    <h2 class="SubtitleCategory">MOTO</h2>
+                </section>
+            </article>
         </article>
 
-        <article id="categoriaCarroDados"></article>
+        <article id="categoriaCarroDados" style="display: none;">
+            <h1 class="categoriasTitle">CARRO:</h1>
+            <article class="containerslide" id="carousel">
+                <section class="boxslide">
+                    <img src="assets/img/TrajetoTReino.png" alt="PERCURSO DE TREINO"
+                        class="fotobox">
+                    <h3 class="nomebox">PERCURSO DE TREINO</h3>
+                </section>
+                <section class="boxslide">
+                    <img src="assets/img/garagem.png" alt="GARAGEM" class="fotobox">
+                    <h3 class="nomebox">GARAGEM</h3>
+                </section>
+                <section class="boxslide">
+                    <img src="https://via.placeholder.com/300x600.png?text=GARAGEM+PROVA" alt="GARAGEM PROVA"
+                        class="fotobox">
+                    <h3 class="nomebox">GARAGEM PROVA</h3>
+                </section>
+                <section class="boxslide">
+                    <img src="https://via.placeholder.com/300x600.png?text=ALUNO+TREINANDO" alt="ALUNO TREINANDO"
+                        class="fotobox">
+                    <h3 class="nomebox">ALUNO TREINANDO</h3>
+                </section>
+                <section class="boxslide">
+                    <img src="https://via.placeholder.com/300x600.png?text=ALUNO+TREINANDO" alt="ALUNO TREINANDO"
+                        class="fotobox">
+                    <h3 class="nomebox">ALUNO TREINANDO</h3>
+                </section>
+                <section class="boxslide">
+                    <img src="https://via.placeholder.com/300x600.png?text=ALUNO+TREINANDO" alt="ALUNO TREINANDO"
+                        class="fotobox">
+                    <h3 class="nomebox">ALUNO TREINANDO</h3>
+                </section>
+            </article>
+        </article>
+        
+        </article>
+
         <article id="categoriaMotoDados"></article>
     </main>
 
