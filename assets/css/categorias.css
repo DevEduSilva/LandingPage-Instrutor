@@ -1,0 +1,109 @@
+#mainCategory {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 72px;
+  gap: 0px !important;
+}
+
+#TitleCategory {
+  margin-bottom: 30px;
+}
+
+#containerCategories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px; /* Reduzi o gap para melhorar a disposição em diferentes resoluções */
+}
+
+.containerPhotoAndSubtitle {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 10px;
+  align-items: center;
+  color: #fff;
+}
+
+.photoCategory {
+  background-color: #fff;
+  height: 31vh;
+  width: 14vw;
+  max-width: 14vw;
+  max-height: 31vh;
+  min-height: 31vh;
+  min-width: 14vw;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.photoCategory:hover {
+  transform: scale(1.05);
+}
+
+/* PARA DISPOSITIVOS MÓVEIS */
+@media screen and (max-width: 767px) {
+  #TitleCategory {
+    margin-top: 150px;
+  }
+
+  #mainCategory {
+    height: auto;
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  #containerCategories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px; /* Gap menor para otimizar o espaço */
+  }
+
+  .photoCategory {
+    width: 45vw; /* Ajusta o tamanho para que duas categorias caibam lado a lado */
+    height: 30vh;
+    max-width: 45vw;
+    max-height: 30vh;
+  }
+}
+
+/* PARA TABLETS */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #mainCategory {
+    height: auto;
+    margin-top: 40px;
+    gap: 30px;
+  }
+
+  #containerCategories {
+    gap: 60px;
+  }
+
+  .photoCategory {
+    width: 40vw;
+    height: 35vh;
+    max-width: 40vw;
+    max-height: 35vh;
+  }
+}
+
+/* PARA TELAS GRANDES */
+@media (min-width: 1367px) {
+  #mainCategory {
+    height: 90vh;
+    margin-top: 80px;
+  }
+
+  #containerCategories {
+    gap: 120px;
+  }
+
+  .photoCategory {
+    width: 12vw;
+    height: 28vh;
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRUTOR DE TRÂNSITO DELCIO </title>
+    <meta name="description"
+        content="Instrutor de trânsito Delcio - Mais de 10 anos ajudando a formar motoristas responsáveis e conscientes. Saiba mais sobre direção, para novos condutores e aulas de reforço.">
+    <link rel="icon" type="image/x-icon" href="assets/img/logoInvertido.png">
+
+    <!-- LINKAGEM DE ICONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- ARQUIVOS CSS -->
+    <!-- GERAL -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- HEADER -->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <!-- FOOTER PARA CATEGORIA-->
+    <link rel="stylesheet" href="assets/css/footer2.css">
+    <!-- categoria -->
+    <link rel="stylesheet" href="assets/css/categorias.css">
+
+
+    <!-- Arquivos JS -->
+    <!-- GERAL -->
+    <script src="assets/js/header.js" defer></script>
+    <script src="assets/js/goToFromHeader.js" defer></script>
+</head>
+
+<body id='inicio'>
+
+    <!-- Header -->
+    <header>
+        <button class="menu-icon" aria-label="Toggle navigation" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <img src="assets/img/logo.png" alt="Logo do site" onclick="window.location.href='index.html'">
+        <nav>
+            <ul>
+                <li><a>INÍCIO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Página caterogia -->
+    <main id="mainCategory">
+
+        <h1 id="TitleCategory">CATEGORIAS</h1>
+
+        <article id="containerCategories">
+            <section class="containerPhotoAndSubtitle">
+                <img src="assets/img/carro.jpg" alt="Categoria Carro" class="photoCategory">
+                <h2 class="SubtitleCategory">CARRO</h2>
+            </section>
+
+            <section class="containerPhotoAndSubtitle">
+                <img src="assets/img/moto.png" alt="Categoria Moto" class="photoCategory">
+                <h2 class="SubtitleCategory">MOTO</h2>
+            </section>
+        </article>
+
+        <article id="categoriaCarroDados"></article>
+        <article id="categoriaMotoDados"></article>
+    </main>
+
+
+    <!-- Footer -->
+    <footer style="position: fixed;">
+        <p>&copy;2024 <strong>Web</strong>DevSilva</p>
+    </footer>
+
+</body>
+
+</html>
