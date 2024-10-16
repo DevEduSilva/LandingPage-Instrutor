@@ -16,6 +16,7 @@ Este projeto é uma landing page para um instrutor de autoescola, desenvolvida c
 - JavaScript
 - API do WhatsApp
 - API do Google Maps
+- Icone do Font Awnsome
 
 ## Estrutura do Projeto
 ```plaintext
@@ -32,18 +33,18 @@ Este projeto é uma landing page para um instrutor de autoescola, desenvolvida c
 └── index.html
 ```
 
-## Padrão de Branches
+## Padrão de Commits
 
-Os nomes de branches são compostos de 2 partes:
+Os nomes dos commits são compostos de 2 partes:
 
-1. **Type ou Categoria do Branch:**
+1. **Type ou Categoria do Commit:**
    - `feat`: Uma nova funcionalidade.
    - `fix`: A correção de um bug.
    - `perf`: Mudança de código focada em melhorar performance.
    - `refactor`: Mudança de código que não adiciona uma funcionalidade e também não corrige um bug.
    - `style`: Mudanças no código que não afetam seu significado (espaço em branco, formatação, ponto e vírgula, etc).
 
-2. **Descrição do que o Branch Faz:**
+2. **Descrição do que o Commit Faz:**
    - Após o type, uma breve descrição da funcionalidade ou correção.
 
 ### Exemplos
