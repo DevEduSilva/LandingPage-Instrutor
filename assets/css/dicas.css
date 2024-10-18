@@ -294,6 +294,8 @@ article {
   place-self: end;
   font-size: 15px;
   font-weight: 600;
+
+  transition: 1s;
 }
 
 #backBtn:hover {

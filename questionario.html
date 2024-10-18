@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTRUTOR DE TRÂNSITO DELCIO</title>
+    <meta
+      name="description"
+      content="Instrutor de trânsito Delcio - Mais de 10 anos ajudando a formar motoristas responsáveis e conscientes. Saiba mais sobre direção, para novos condutores e aulas de reforço."
+    />
+    <link rel="icon" type="image/x-icon" href="assets/img/logoInvertido.png" />
+
+    <!-- LINKAGEM DE ICONES -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- ARQUIVOS CSS -->
+    <!-- GERAL -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- HEADER -->
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <!-- FOOTER -->
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <!-- dicas -->
+    <link rel="stylesheet" href="assets/css/dicas.css" />
+
+    <link rel="stylesheet" href="assets/css/questionario.css" />
+
+    <!-- Arquivos JS -->
+    <!-- GERAL -->
+    <script src="assets/js/header.js" defer></script>
+    <script src="assets/js/goToFromHeader.js" defer></script>
+    <!-- module para conseguir puxar outros arquivos -->
+    <script type="module" src="assets/js/questionario.js" async></script>
+  </head>
+
+  <body id="inicio">
+    <!-- Header -->
+    <header>
+      <button
+        class="menu-icon"
+        aria-label="Toggle navigation"
+        onclick="toggleMenu()"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <img
+        src="assets/img/logo.png"
+        alt="Logo do site"
+        onclick="window.location.href='index.html'"
+      />
+      <nav>
+        <ul>
+          <li><a onclick="window.location.reload()">REINICIAR TESTE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Página Questionário -->
+    <main id="mainQuest">
+      <div class="container">
+        <div class="status-container">
+          <span class="feedbackGood status correct hide">ACERTOU :)</span>
+          <span class="feedbackBad status incorrect hide">ERROU :(</span>
+        </div>
+
+        <div class="questions-container hide">
+          <span class="question">Pergunta aqui!</span>
+
+          <div class="answers-container">
+            <button class="answer button">Resposta 1</button>
+            <button class="answer button">Resposta 2</button>
+            <button class="answer button">Resposta 3</button>
+            <button class="answer button">Resposta 4</button>
+          </div>
+        </div>
+        <div class="messagemInicial-container">
+            
+          <span class="messagemInicial"
+            >SEJA BEM VINDO AO SIMULADOR DE QUESTÕES DE DIREÇÃO</span
+          >
+        </div>
+        <div class="controls-container">
+          <button class="start-quiz button">INICIAR TESTE</button>
+          <button class="next-question button hide">Próxima Pergunta!</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

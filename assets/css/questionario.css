@@ -1,0 +1,152 @@
+.mainQuest {
+  display: flex;
+  flex-direction: column !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  background-color: #1c1c3a;
+  width: 90%;
+  max-width: 800px;
+  height: 60vh;
+  max-height: 600px;
+
+  border: 2px solid #e1e1e6;
+  border-radius: 6px;
+  padding: 16px;
+
+  box-shadow: 0 0 2px 2px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+}
+
+.questions-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.question {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.answers-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Media Queries para dispositivos móveis e tablets */
+@media only screen and (max-width: 768px) {
+  .answers-container {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    height: 70vh;
+    max-height: 75vh;
+  }
+}
+
+.next-question {
+  margin-top: 32px;
+}
+
+.button {
+  background-color: #4863f7;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 6px;
+  height: 90vw;
+  max-height: 61px;
+  width: 90%;
+  max-width: 392px;
+  padding: 0 32px;
+
+  transition: filter 0.2s;
+}
+
+/* Só vai funcionar em botão ativado */
+.button:not(:disabled):hover {
+  filter: brightness(0.8);
+}
+
+.answer:disabled {
+  cursor: not-allowed;
+}
+
+.final-message {
+  font-size: 20px;
+  text-align: center;
+}
+
+.final-message span {
+  display: block;
+  margin-top: 8px;
+}
+
+.hide {
+  display: none;
+}
+
+.correct {
+  background-color: #049b48;
+}
+
+.incorrect {
+  background-color: #a10101;
+}
+
+.status-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.status {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 20px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.messagemInicial {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.finalOrganizadoButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
