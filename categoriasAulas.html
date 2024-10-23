@@ -54,7 +54,7 @@
       <nav>
         <ul>
           <li onclick="window.location.href='index.html'"><a>INÍCIO</a></li>
-          <li onclick="ocultarDados()"><a>VOLTAR</a></li>
+          <li  class="ocultarDadosButton hide" onclick="ocultarDados()"><a>VOLTAR</a></li>
         </ul>
       </nav>
     </header>
@@ -87,40 +87,24 @@
           </section>
           <section class="boxslide">
             <img src="assets/img/garagem.png" alt="GARAGEM" class="fotobox" />
-            <h3 class="nomebox">GARAGEM</h3>
+            <h3 class="nomebox">GARAGEM TREINO</h3>
           </section>
           <section class="boxslide">
             <img
-              src="https://via.placeholder.com/300x600.png?text=GARAGEM+PROVA"
+              src="assets/img/GaragemProva.png"
               alt="GARAGEM PROVA"
               class="fotobox"
             />
             <h3 class="nomebox">GARAGEM PROVA</h3>
           </section>
-          <section class="boxslide">
+          <!-- <section class="boxslide">
             <img
               src="https://via.placeholder.com/300x600.png?text=ALUNO+TREINANDO"
               alt="ALUNO TREINANDO"
               class="fotobox"
             />
             <h3 class="nomebox">ALUNO TREINANDO</h3>
-          </section>
-          <section class="boxslide">
-            <img
-              src="https://via.placeholder.com/300x600.png?text=ALUNO+TREINANDO"
-              alt="ALUNO TREINANDO"
-              class="fotobox"
-            />
-            <h3 class="nomebox">ALUNO TREINANDO</h3>
-          </section>
-          <section class="boxslide">
-            <img
-              src="https://via.placeholder.com/300x600.png?text=ALUNO+TREINANDO"
-              alt="ALUNO TREINANDO"
-              class="fotobox"
-            />
-            <h3 class="nomebox">ALUNO TREINANDO</h3>
-          </section>
+          </section>-->
         </article>
       </article>
     </main>
@@ -134,20 +118,22 @@
       const $TitleCategory = document.querySelector("#TitleCategory");
       const $categoriaS = document.querySelector(".containerPhotoAndSubtitle");
       const $categoriaCarroDados = document.querySelector("#categoriaCarroDados");
+    const $ocultarDadosButton= document.querySelector(".ocultarDadosButton")
 
       $categoriaS.addEventListener("click", mostrarDados);
 
       function mostrarDados() {
-        console.log("mf");
         $TitleCategory.classList.add("hide");
         $categoriaS.classList.add("hide");
         $categoriaCarroDados.classList.remove("hide");
+        $ocultarDadosButton.classList.remove("hide")
       }
 
       function ocultarDados() {
         $TitleCategory.classList.remove("hide");
         $categoriaS.classList.remove("hide");
         $categoriaCarroDados.classList.add("hide");
+        $ocultarDadosButton.classList.add("hide")
       }
     </script>
   </body>
