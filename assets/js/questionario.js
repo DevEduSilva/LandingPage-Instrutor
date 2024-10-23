@@ -9,6 +9,7 @@ const $nextQuestionButton = document.querySelector(".next-question")
 const $statusGood = document.querySelector(".feedbackGood")
 const $statusBad = document.querySelector(".feedbackBad")
 const $messagemInicial = document.querySelector(".messagemInicial-container")
+const $reinciarTeste = document.querySelector(".reinciarTeste")
 
 // Indicador de questão atual
 let currentQuestionIndex = 0
@@ -25,6 +26,7 @@ function startGame() {
     $startGameButton.classList.add("hide")
     $questionsContainer.classList.remove("hide")
     $messagemInicial.classList.add("hide")
+    $reinciarTeste.classList.remove("hide")
 
     displayNextQuestion()
 }
