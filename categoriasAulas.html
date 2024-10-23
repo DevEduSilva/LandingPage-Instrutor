@@ -1,119 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INTRUTOR DE TRÂNSITO DELCIO </title>
-    <meta name="description"
-        content="Instrutor de trânsito Delcio - Mais de 10 anos ajudando a formar motoristas responsáveis e conscientes. Saiba mais sobre direção, para novos condutores e aulas de reforço.">
-    <link rel="icon" type="image/x-icon" href="assets/img/logoInvertido.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTRUTOR DE TRÂNSITO DELCIO</title>
+    <meta
+      name="description"
+      content="Instrutor de trânsito Delcio - Mais de 10 anos ajudando a formar motoristas responsáveis e conscientes. Saiba mais sobre direção, para novos condutores e aulas de reforço."
+    />
+    <link rel="icon" type="image/x-icon" href="assets/img/logoInvertido.png" />
 
     <!-- LINKAGEM DE ICONES -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
     <!-- ARQUIVOS CSS -->
     <!-- GERAL -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- HEADER -->
-    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/header.css" />
     <!-- FOOTER PARA CATEGORIA-->
-    <link rel="stylesheet" href="assets/css/footer2.css">
+    <link rel="stylesheet" href="assets/css/footer2.css" />
     <!-- categoria -->
-    <link rel="stylesheet" href="assets/css/categorias.css">
+    <link rel="stylesheet" href="assets/css/categorias.css" />
     <!-- Slider -->
-    <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="assets/css/slider.css" />
+    <!-- manipulando as opções -->
+    <link rel="stylesheet" href="assets/css/categoryOptions.css" />
+
     <script src="assets/js/slider.js" defer></script>
-
-
 
     <!-- Arquivos JS -->
     <!-- GERAL -->
     <script src="assets/js/header.js" defer></script>
     <script src="assets/js/goToFromHeader.js" defer></script>
-</head>
+  </head>
 
-<body id='inicio'>
-
+  <body id="inicio">
     <!-- Header -->
     <header>
-        <button class="menu-icon" aria-label="Toggle navigation" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <img src="assets/img/logo.png" alt="Logo do site" onclick="window.location.href='index.html'">
-        <nav>
-            <ul>
-                <li><a>INÍCIO</a></li>
-            </ul>
-        </nav>
+      <button
+        class="menu-icon"
+        aria-label="Toggle navigation"
+        onclick="toggleMenu()"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <img src="assets/img/logo.png" alt="Logo do site" />
+      <nav>
+        <ul>
+          <li onclick="window.location.href='index.html'"><a>INÍCIO</a></li>
+          <li onclick="ocultarDados()"><a>VOLTAR</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Página caterogia -->
     <main id="mainCategory">
-        <article id="OnAndOff">
-            <h1 id="TitleCategory">CATEGORIAS</h1>
+      <article id="OnAndOff">
+        <h1 id="TitleCategory">CATEGORIA</h1>
 
-            <article id="containerCategories">
-                <section class="containerPhotoAndSubtitle">
-                    <img src="assets/img/carro.jpg" alt="Categoria Carro" class="photoCategory">
-                    <h2 class="SubtitleCategory">CARRO</h2>
-                </section>
+        <section class="containerPhotoAndSubtitle HIDE">
+          <img
+            src="assets/img/carro.jpg"
+            alt="Categoria Carro"
+            class="photoCategory"
+          />
+          <h2 class="SubtitleCategory">CARRO</h2>
+        </section>
+      </article>
 
-                <section class="containerPhotoAndSubtitle">
-                    <img src="assets/img/moto.png" alt="Categoria Moto" class="photoCategory">
-                    <h2 class="SubtitleCategory">MOTO</h2>
-                </section>
-            </article>
+      <article id="categoriaCarroDados" class="hide">
+        <h1 class="categoriasTitle">CARRO:</h1>
+        <article class="containerslide" id="carousel">
+          <section class="boxslide">
+            <img
+              src="assets/img/TrajetoTReino.png"
+              alt="PERCURSO DE TREINO"
+              class="fotobox"
+            />
+            <h3 class="nomebox">PERCURSO DE TREINO</h3>
+          </section>
+          <section class="boxslide">
+            <img src="assets/img/garagem.png" alt="GARAGEM" class="fotobox" />
+            <h3 class="nomebox">GARAGEM</h3>
+          </section>
+          <section class="boxslide">
+            <img
+              src="https://via.placeholder.com/300x600.png?text=GARAGEM+PROVA"
+              alt="GARAGEM PROVA"
+              class="fotobox"
+            />
+            <h3 class="nomebox">GARAGEM PROVA</h3>
+          </section>
+          <section class="boxslide">
+            <img
+              src="https://via.placeholder.com/300x600.png?text=ALUNO+TREINANDO"
+              alt="ALUNO TREINANDO"
+              class="fotobox"
+            />
+            <h3 class="nomebox">ALUNO TREINANDO</h3>
+          </section>
+          <section class="boxslide">
+            <img
+              src="https://via.placeholder.com/300x600.png?text=ALUNO+TREINANDO"
+              alt="ALUNO TREINANDO"
+              class="fotobox"
+            />
+            <h3 class="nomebox">ALUNO TREINANDO</h3>
+          </section>
+          <section class="boxslide">
+            <img
+              src="https://via.placeholder.com/300x600.png?text=ALUNO+TREINANDO"
+              alt="ALUNO TREINANDO"
+              class="fotobox"
+            />
+            <h3 class="nomebox">ALUNO TREINANDO</h3>
+          </section>
         </article>
-
-        <article id="categoriaCarroDados" style="display: none;">
-            <h1 class="categoriasTitle">CARRO:</h1>
-            <article class="containerslide" id="carousel">
-                <section class="boxslide">
-                    <img src="assets/img/TrajetoTReino.png" alt="PERCURSO DE TREINO"
-                        class="fotobox">
-                    <h3 class="nomebox">PERCURSO DE TREINO</h3>
-                </section>
-                <section class="boxslide">
-                    <img src="assets/img/garagem.png" alt="GARAGEM" class="fotobox">
-                    <h3 class="nomebox">GARAGEM</h3>
-                </section>
-                <section class="boxslide">
-                    <img src="https://via.placeholder.com/300x600.png?text=GARAGEM+PROVA" alt="GARAGEM PROVA"
-                        class="fotobox">
-                    <h3 class="nomebox">GARAGEM PROVA</h3>
-                </section>
-                <section class="boxslide">
-                    <img src="https://via.placeholder.com/300x600.png?text=ALUNO+TREINANDO" alt="ALUNO TREINANDO"
-                        class="fotobox">
-                    <h3 class="nomebox">ALUNO TREINANDO</h3>
-                </section>
-                <section class="boxslide">
-                    <img src="https://via.placeholder.com/300x600.png?text=ALUNO+TREINANDO" alt="ALUNO TREINANDO"
-                        class="fotobox">
-                    <h3 class="nomebox">ALUNO TREINANDO</h3>
-                </section>
-                <section class="boxslide">
-                    <img src="https://via.placeholder.com/300x600.png?text=ALUNO+TREINANDO" alt="ALUNO TREINANDO"
-                        class="fotobox">
-                    <h3 class="nomebox">ALUNO TREINANDO</h3>
-                </section>
-            </article>
-        </article>
-        
-        </article>
-
-        <article id="categoriaMotoDados"></article>
+      </article>
     </main>
 
-
     <!-- Footer -->
-    <footer style="position: fixed;">
-        <p>&copy;2024 <strong>Web</strong>DevSilva</p>
+    <footer style="position: fixed">
+      <p>&copy;2024 <strong>Web</strong>DevSilva</p>
     </footer>
 
-</body>
+    <script>
+      const $TitleCategory = document.querySelector("#TitleCategory");
+      const $categoriaS = document.querySelector(".containerPhotoAndSubtitle");
+      const $categoriaCarroDados = document.querySelector(
+        "#categoriaCarroDados"
+      );
 
+      $categoriaS.addEventListener("click", mostrarDados);
+
+      function mostrarDados() {
+        console.log("mf");
+        $TitleCategory.classList.add("hide");
+        $categoriaS.classList.add("hide");
+        $categoriaCarroDados.classList.remove("hide");
+      }
+
+      function ocultarDados() {
+        $TitleCategory.classList.remove("hide");
+        $categoriaS.classList.remove("hide");
+        $categoriaCarroDados.classList.add("hide");
+      }
+    </script>
+  </body>
 </html>
