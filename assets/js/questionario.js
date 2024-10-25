@@ -10,6 +10,7 @@ const $statusGood = document.querySelector(".feedbackGood")
 const $statusBad = document.querySelector(".feedbackBad")
 const $messagemInicial = document.querySelector(".messagemInicial-container")
 const $reinciarTeste = document.querySelector(".reinciarTeste")
+const $imgElement = document.querySelector(".question-image");
 
 // Indicador de questão atual
 let currentQuestionIndex = 0
@@ -30,7 +31,7 @@ function startGame() {
 
     displayNextQuestion()
 }
-
+    
 function displayNextQuestion() {
     //resetar estado do quiz
     resetState()
@@ -42,6 +43,14 @@ function displayNextQuestion() {
 
     // Verifica se ainda há questões e insere
     $questionText.textContent = `${currentQuestionIndex + 1}) ${questions[currentQuestionIndex].question}`
+
+    // Atualizar o `src` da imagem para a nova pergunta
+    if (questions[currentQuestionIndex].image) {
+        $imgElement.src = questions[currentQuestionIndex].image;
+        $imgElement.classList.remove("hide");
+    } else {
+        $imgElement.classList.add("hide"); // Ocultar imagem se não houver
+    }
 
     // Mostrar as respostas disponíveis para a pergunta atual
     questions[currentQuestionIndex].answers.forEach(answer => {

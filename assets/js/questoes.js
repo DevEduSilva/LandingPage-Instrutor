@@ -37,13 +37,14 @@ export const questions = [
         ]
     },
     {
-        question: "A placa ao lado significa:",
+        question: "A placa abaixo significa:",
         answers: [
             { text: "bifurcação em cruz", correct: false },
             { text: "entroncamento", correct: false },
             { text: "cruzamento de vias", correct: true },
             { text: "interseção de vias", correct: false }
-        ]
+        ],
+        image: "assets/img/placas/placa1.png"
     },
     {
         question: "Quando estacionar o veículo sobre as pistas de rolamento das estradas, o condutor será punido com:",
@@ -73,22 +74,25 @@ export const questions = [
         ]
     },
     {
-        question: "A placa ao lado significa:",
+        question: "A placa abaixo significa:",
         answers: [
             { text: "Ultrapassar os pedestres pela esquerda", correct: false },
             { text: "Pedestre, ande pela esquerda", correct: true },
             { text: "Pedestre, ultrapasse sempre pela esquerda", correct: false },
             { text: "Atenção, pedestres circulando pela esquerda", correct: false }
-        ]
+        ],
+        image: "assets/img/placas/placa2.png"
+
     },
     {
-        question: "A placa ao lado significa:",
+        question: "A placa abaixo significa:",
         answers: [
             { text: "altura máxima permitida", correct: false },
             { text: "largura mínima permitida", correct: false },
             { text: "peso máximo permitido", correct: false },
             { text: "altura limitada", correct: true }
-        ]
+        ],
+        image: "assets/img/placas/placa3.png"
     },
     {
         question: "São vias rurais:",
@@ -109,13 +113,14 @@ export const questions = [
         ]
     },
     {
-        question: "A placa ao lado significa:",
+        question: "A placa abaixo significa:",
         answers: [
             { text: "peso bruto total máximo proibido", correct: false },
             { text: "peso bruto total mínimo permitido", correct: false },
             { text: "peso bruto permitido", correct: false },
             { text: "peso bruto total máximo permitido", correct: true }
-        ]
+        ],
+        image: "assets/img/placas/placa4.png"
     },
     {
         question: "É obrigatório o uso do cinto de segurança para condutor e passageiros em todas as vias do território nacional, salvo em situações regulamentadas:",
@@ -217,13 +222,14 @@ export const questions = [
         ]
     },
     {
-        question: "A placa ao lado significa:",
+        question: "A placa abaixo significa:",
         answers: [
-            { text: "proibido estacionar", correct: true },
+            { text: "ponte estreita", correct: true },
             { text: "proibido parar", correct: false },
             { text: "estacionamento regulamentado", correct: false },
             { text: "estacionamento permitido", correct: false }
-        ]
+        ],
+        image: "assets/img/placas/placa5.png"
     },
     {
         question: "Quando um motorista for punido com a suspensão do direito de dirigir, a penalidade será de:",
@@ -235,22 +241,24 @@ export const questions = [
         ]
     },
     {
-        question: "A placa ao lado significa:",
+        question: "A placa abaixo significa:",
+        answers: [
+            { text: "mão dupla", correct: true },
+            { text: "Proibido parar", correct: false },
+            { text: "Atenção, cuidado com o estacionamento", correct: false },
+            { text: "Estacionamento permitido", correct: false }
+        ],
+        image: "assets/img/placas/placa6.png"
+    },
+    {
+        question: "A placa abaixo significa:",
         answers: [
             { text: "Atenção, ciclistas na pista", correct: true },
             { text: "Atenção, ciclistas devem andar pela pista", correct: false },
             { text: "Atenção, ciclistas não podem andar pela pista", correct: false },
             { text: "Atenção, ciclistas na calçada", correct: false }
-        ]
-    },
-    {
-        question: "A placa ao lado significa:",
-        answers: [
-            { text: "Proibido estacionar", correct: true },
-            { text: "Proibido parar", correct: false },
-            { text: "Atenção, cuidado com o estacionamento", correct: false },
-            { text: "Estacionamento permitido", correct: false }
-        ]
+        ],
+        image: "assets/img/placas/placa7.png"
     },
     {
         question: "O que o motorista deve fazer quando vê um sinal de Pare?",

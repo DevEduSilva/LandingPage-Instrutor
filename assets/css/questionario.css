@@ -11,8 +11,8 @@ button {
   background-color: #1c1c3a;
   width: 90%;
   max-width: 800px;
-  height: 60vh;
-  max-height: 600px;
+  height: 70vh;
+  max-height: 800px;
 
   border: 2px solid #e1e1e6;
   border-radius: 6px;
@@ -38,7 +38,7 @@ button {
 }
 
 .question {
-  font-size: 24px;
+  font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
 }
@@ -50,6 +50,16 @@ button {
   gap: 16px;
 }
 
+/* formatação das imgs */
+.img {
+  display: flex;
+  align-items: center;
+}
+
+.question-image {
+  height: 20vh;
+}
+
 /* Media Queries para dispositivos móveis e tablets */
 @media only screen and (max-width: 768px) {
   .answers-container {
@@ -57,8 +67,12 @@ button {
   }
 
   .container {
-    height: 70vh;
-    max-height: 75vh;
+    height: 85%;
+  }
+
+  .question-image {
+    height: 10vh;
+    margin: 0;
   }
 }
 
