@@ -31,10 +31,9 @@
   background-color: #fff;
   height: 31vh;
   width: 14vw;
-  max-width: 14vw;
   max-height: 31vh;
   min-height: 31vh;
-  min-width: 14vw;
+  min-width: 250px;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;

@@ -57,14 +57,14 @@
 /* PARA DISPOSITIVOS MÓVEIS - ATÉ 767px */
 @media screen and (max-width: 767px) {
   .containerslide {
-    height: 50vh;
+    height: 40vh;
     max-width: 90%;
-    gap: 5px;
+    gap: 20px;
   }
 
   .boxslide {
     min-width: 50vw;
-    max-width: none;
+    width: 80vw;
     height: 95%;
   }
 
