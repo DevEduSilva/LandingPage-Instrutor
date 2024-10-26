@@ -11,7 +11,7 @@ button {
   background-color: #1c1c3a;
   width: 90%;
   max-width: 800px;
-  height: 70vh;
+  height: 72vh;
   max-height: 800px;
 
   border: 2px solid #e1e1e6;
@@ -159,9 +159,24 @@ button {
   text-align: center;
 }
 
-.finalOrganizadoButtons{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+.finalOrganizadoButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
+/* barra de progresso */
+.progress-bar-container {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 3px;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #00ff0d;
+  border-radius: 5px;
+}

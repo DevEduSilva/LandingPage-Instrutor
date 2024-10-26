@@ -11,11 +11,18 @@ const $statusBad = document.querySelector(".feedbackBad")
 const $messagemInicial = document.querySelector(".messagemInicial-container")
 const $reinciarTeste = document.querySelector(".reinciarTeste")
 const $imgElement = document.querySelector(".question-image");
+const $progressBarContainer = document.querySelector(".progress-bar-container")
+const $progressBar = document.querySelector(".progress-bar")
 
 // Indicador de questão atual
 let currentQuestionIndex = 0
 // variavel feita para contabilizar respostas corretas
 let totalCorrect = 0
+
+// avisar user que a tela será recarregada
+window.addEventListener('beforeunload', function (event) {
+    event.preventDefault();
+});
 
 // Função de click para iniciar o quiz
 $startGameButton.addEventListener("click", startGame)
@@ -28,15 +35,18 @@ function startGame() {
     $questionsContainer.classList.remove("hide")
     $messagemInicial.classList.add("hide")
     $reinciarTeste.classList.remove("hide")
+    $progressBarContainer.classList.remove("hide");
+
 
     displayNextQuestion()
 }
-    
+
 function displayNextQuestion() {
     //resetar estado do quiz
     resetState()
 
     if (questions.length === currentQuestionIndex) {
+        $progressBarContainer.classList.add("hide");
         // return dizendo para não continuar caso atendido
         return finishGame();
     }
@@ -51,6 +61,10 @@ function displayNextQuestion() {
     } else {
         $imgElement.classList.add("hide"); // Ocultar imagem se não houver
     }
+
+    // Atualizar a barra de progresso
+    const progressPercentage = ((currentQuestionIndex + 1) / questions.length) * 100;
+    $progressBar.style.width = `${progressPercentage}%`;
 
     // Mostrar as respostas disponíveis para a pergunta atual
     questions[currentQuestionIndex].answers.forEach(answer => {
