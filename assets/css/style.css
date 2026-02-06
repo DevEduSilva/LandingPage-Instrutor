@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  user-select: none;
 }
 
 body {
@@ -323,8 +322,8 @@ main button:hover .border {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 30px;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
