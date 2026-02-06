@@ -331,6 +331,7 @@ main button:hover .border {
   flex: 1;
   max-width: 560px;
   height: 315px;
+  min-height: 315px;
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -450,6 +451,7 @@ main button:hover .border {
   #centralizarvideoseinfo iframe {
     width: 560px;
     height: 315px;
+    margin: 0 auto;
   }
 
   #centralizarvideoseinfo p {
